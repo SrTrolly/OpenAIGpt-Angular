@@ -13,17 +13,18 @@ import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TextMessagesBoxComponent {
-  private fb: FormBuilder = Inject(FormBuilder);
 
   @Input() public placeholder: string = "";
   @Input() public disableCorrections: boolean = false;
 
   @Output() public onMessage: EventEmitter<string> = new EventEmitter<string>();
 
+  // private fb: FormBuilder = Inject(FormBuilder);
+
   public form = this.fb.group({
     prompt: ["", Validators.required],
   });
-  // constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder) { }
 
 
   handleSubmit() {

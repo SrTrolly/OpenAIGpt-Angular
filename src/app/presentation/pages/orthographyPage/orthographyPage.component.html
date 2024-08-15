@@ -4,7 +4,8 @@
         <div class="grid gap-y-2">
 
             <!-- Chat Messages -->
-            <app-chat-message text="Escribe el texto que quiere que revise"></app-chat-message>
+            <app-chat-message
+                text="### Moto\n\n**Pros:**\n- Más económica de comprar que un carro.\n- Más fácil de estacionar en espacios reducidos.\n- Consumo de combustible más bajo que un carro.\n- Mayor agilidad para desplazarse en el tráfico.\n\n**Contras:**\n- Menor capacidad de carga que un carro.\n- Menor protección en caso de accidente.\n- Limitada para transportar pasajeros.\n- Menos cómoda en viajes largos.\n\n### Carro\n\n**Pros:**\n- Mayor capacidad de carga que una moto.\n- Mayor protección en caso de accidente.\n- Más cómodo para viajes largos.\n- Puede transportar más pasajeros.\n\n**Contras:**\n- Más costoso de comprar y mantener que una moto.\n- Consumo de combustible más alto que una moto.\n- Difícil de estacionar en espacios reducidos.\n- Menos agilidad para desplazarse en el tráfico."></app-chat-message>
 
             @for (message of messages(); track $index) {
             @if (message.isGpt) {

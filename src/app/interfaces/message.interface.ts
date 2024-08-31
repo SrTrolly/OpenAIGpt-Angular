@@ -8,5 +8,9 @@ export interface Message {
         errors: string[];
         message: string;
     },
-    audioUrl?: string
+    audioUrl?: string;
+    imageInfo?: {
+        url: string;
+        alt: string;
+    }
 }

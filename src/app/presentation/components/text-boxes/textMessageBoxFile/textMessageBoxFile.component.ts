@@ -45,7 +45,6 @@ export class TextMessageBoxFileComponent {
   handleSubmit() {
     if (this.form.invalid) return;
     const { prompt, file } = this.form.value;
-    console.log({ prompt });
     this.onMessage.emit({ prompt, file: file! });
     this.form.reset();
   }

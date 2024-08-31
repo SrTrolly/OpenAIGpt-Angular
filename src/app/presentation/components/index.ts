@@ -5,4 +5,5 @@ export * from "./sidebarMenuItem/sidebarMenuItem.component";
 export * from "./text-boxes/textMessagesBox/textMessagesBox.component"
 export * from "./text-boxes/textMessageBoxSelect/textMessageBoxSelect.component";
 export * from "./text-boxes/textMessageBoxFile/textMessageBoxFile.component";
-export * from "./chat-bubbles/gptMessageOrthography/gptMessageOrthography.component"
+export * from "./chat-bubbles/gptMessageOrthography/gptMessageOrthography.component";
+export * from "./chat-bubbles/gptMessageEditableImage/gptMessageEditableImage.component";

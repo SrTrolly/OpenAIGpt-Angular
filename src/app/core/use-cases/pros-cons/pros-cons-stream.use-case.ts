@@ -18,7 +18,6 @@ export async function* prosConsStreamUseCase(prompt: string, abortSignal: AbortS
 
         const reader = resp.body?.getReader();
         if (!reader) {
-            console.log("No se puedo generar el reader");
             throw new Error("No se pudo generar el reader");
         }
 

@@ -18,5 +18,7 @@ export class ChatMessageComponent {
 
   @Input() audioUrl?: string;
 
+  @Input() imageInfo?: { url: string, alt: string };
+
 
 }
